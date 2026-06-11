@@ -1,60 +1,96 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina web personal</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <h1>Yael Zuna</h1>
-    <h2>Desarrolladora de Software</h2>
-    <p>
-        Bienvenido a mi pagina web, donde puedes conocer más sobre mi trabajo y
-        experiencia.
-    </p>
-
-    <img src="/assets/foto-perfil.png" alt="Foto de perfil" width="200" />
-
-    <h3>Habilidades Técnicas</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-    </ul>
-    <section>
-        <h3>Proyecto Destacado</h3>
+  <body>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Yael Zuna</h1>
+        <h2>Desarrolladora de Software</h2>
         <p>
-            Desarrolle un marketplace de libros nuevos/usados para la comunidad
-            lectora de mendoza
+          Bienvenido a mi página web, donde puedes conocer más sobre mi trabajo y experiencia.
         </p>
-        <img src="/assets/bookealogo.png" alt="Logo del proyecto Bookea" width="200" />
-        <p>Un poco del sitio web</p>
-        <img src="/assets/bookea-sitio.png" alt="Captura del sitio web Bookea" width="400" />
+      </div>
+      <div class="hero-img">
+        <img src="/assets/foto-perfil.png" alt="Foto de perfil" />
+      </div>
     </section>
 
-    <section>
-        <h3>Contacto</h3>
-        <p>
-            Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje a
-            través del siguiente formulario:
-        </p>
-        <form action="https://formspree.io/f/mjgdbwle" method="POST">
-            <label for="name">Nombre:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+    <section class="habilidades">
+      <h3>Habilidades Técnicas</h3>
 
-            <label for="email">Correo Electrónico:</label><br />
-            <input type="email" id="email" name="_replyto" required /><br /><br />
+      <div>
+        <h4>Lenguajes</h4>
+        <ul>
+          <li>JAVA</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Frontend</h4>
+        <ul>
+          <li>CSS</li>
+          <li>Boostrap</li>
+          <li>React</li>
+        </ul>
+      </div>
 
-            <label for="message">Mensaje:</label><br />
-            <textarea id="message" name="message" rows="4" required></textarea><br /><br />
-
-            <input type="submit" value="Enviar" />
-        </form>
+      <div>
+        <h4>Backend</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>REST API</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Base de datos</h4>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Supabase</li>
+        </ul>
+      </div>
     </section>
-</body>
 
+    <section class="proyecto">
+      <h3>Proyecto Destacado</h3>
+
+      <p>
+        Desarrollé un marketplace de libros nuevos y usados para la comunidad
+        lectora de Mendoza.
+      </p>
+
+      <div class="bookea">
+        <img src="/assets/bookealogo.png" alt="Bookea Logo" />
+    </div>
+    </section>
+
+    <section class="contacto">
+      <h3>Contacto</h3>
+      <p>
+        Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje a
+        través del siguiente formulario:
+      </p>
+      <form action="https://formspree.io/f/mjgdbwle" method="POST">
+        <label for="name">Nombre:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Correo Electrónico:</label><br />
+        <input type="email" id="email" name="_replyto" required /><br /><br />
+
+        <label for="message">Mensaje:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
 </html>
